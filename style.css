@@ -18,3 +18,44 @@
     background:#fff;
     border-radius: 10px;
 }
+.todo-app h2{
+    color: #E65C19;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.todo-app img{
+width: 30px;
+margin-left: 10px;
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #E65C19;
+    padding: 0px;
+    margin-bottom: 30px;
+    border-radius: 1em;
+}
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 15px 50px;
+    background: #F8D082;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 1em;
+}
