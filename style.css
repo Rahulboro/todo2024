@@ -59,3 +59,31 @@ button{
     cursor: pointer;
     border-radius: 1em;
 }
+ul li{
+    list-style: none;
+    padding: 14px 8px 12px 50px;
+    font-size: 16px;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+
+}
+ul li::before{
+    content: " ";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 1em;
+    border:solid 1px black;
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 0px;
+}
+.check-box{
+    color: #555;
+    text-decoration: line-through;
+}
+.check-box::before{
+    background-image: url(./asset/badge-check-solid-24.png);
+}
