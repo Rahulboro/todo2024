@@ -3,7 +3,7 @@ const inputBox = document.querySelector("#input-box");
 const listContainer = document.querySelector(".list-container");
 
 //function of adding task
-function AddTask() {
+function addTask() {
   if (inputBox.value === "") {
     alert("please add your text");
   } else {
@@ -13,9 +13,8 @@ function AddTask() {
     createList.innerHTML = inputBox.value;
     listContainer.appendChild(createList);
     //Creating cross mark button
-    let creatCrossIcon = document.createElement("img");
-    creatCrossIcon.classList("cross-icon");
-    creatCrossIcon.src = "./asset/x-circle-regular-24.png";
+    let creatCrossIcon = document.createElement("span");
+    creatCrossIcon.innerHTML = "\u00d7";
     createList.appendChild(creatCrossIcon);
   }
   inputBox.value = "";

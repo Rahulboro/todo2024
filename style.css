@@ -6,21 +6,23 @@
 }
 .container{
     width: 100vw;
-    height: 100vh;
+    height: 1200px;
     background: linear-gradient(180deg, #640D6B, #B51B75);
     padding: 20px;
 }
 .todo-app{
     width: 100%;
-    max-width: 600px;
-    margin: 100px;
-    padding: 40px 30px 70px;
+    max-width: 40%;
+    align-items: center;
+    padding: 40px 30px 90px;
     background:#fff;
+    margin-left: 420px;
     border-radius: 10px;
 }
 .todo-app h2{
     color: #E65C19;
     display: flex;
+    left: 0;
     align-items: center;
     margin-bottom: 20px;
 
@@ -86,4 +88,18 @@ ul li::before{
 }
 .check-box::before{
     background-image: url(./asset/badge-check-solid-24.png);
+}
+span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;    
+    height: 0px;
+    font-size: 20px;
+    color: #555;      
+    text-align: center;
+
+}
+span:hover{
+    background: #000000;
 }
